@@ -16,6 +16,7 @@ RUN sh
 # Install the required python modules
 RUN pip install httpserver
 #RUN pip install socketserver
+RUN pip install prometheus_client
 
 # Launch the webserver
 CMD ["python3", "python-webserver.py"]
